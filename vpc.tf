@@ -12,4 +12,9 @@ resource "aws_vpc" "main" {
 
 resource "aws_eip" "lb" {
   domain   = "vpc"
+
+tag = "{
+Name = "terraform-eip"
+}
+
 }
